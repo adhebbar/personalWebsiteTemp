@@ -1,181 +1,434 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>personal website</title>
-  <meta charset="utf-8">
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Aditi Hebbar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Designer Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
 
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- Custom Theme files -->
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<!--gallery -->
+	<link type="text/css" rel="stylesheet" href="css/cm-overlay.css" />
+	<!-- //gallery -->
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- font-awesome icons -->
+	<!--//Custom Theme files-->
+	<!-- js -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i" rel="stylesheet">
+	<!-- //web-fonts -->
 </head>
+
 <body>
-<!-- Intro to me-->
-<div class="jumbotron text-center" id="title" style ="padding-top:400px;padding-bottom:400px;" >
-  <h3 style="color:white;">LET'S BUILD SOMETHING AMAZING TOGETHER!</h3>
-  <p>Aditi Hebbar, ECE student at CMU</p>
-    <h3 style="color:white;">Sorry, this website is at its rudimentary stage. Please check back soon!</h3>
-</div>
+	<!-- banner -->
+	<div id="home" class="banner">
+		<div class="banner-agileinfo">
+			<!-- header -->
+			<div class="header">
+				<div class="container">
+					<div class="menu">
+						<a href="" id="menuToggle"> <span class="navClosed"></span> </a>
+						<nav>
+							<a href="#home" class="active scroll">Home</a>
+							<a href="#about" class="scroll">About Me</a>
+							<a href="#skills" class="scroll">Skills</a>
+							<a href="#gallery" class="scroll">My Work</a>
+							<a href="#contact" class="scroll">Contact</a>
+						</nav>
+						<script>
+							(function ($) {
+								// Menu Functions
+								$(document).ready(function () {
+									$('#menuToggle').click(function (e) {
+										var $parent = $(this).parent('.menu');
+										$parent.toggleClass("open");
+										var navState = $parent.hasClass('open') ? "hide" : "show";
+										$(this).attr("title", navState + " navigation");
+										// Set the timeout to the animation length in the CSS.
+										setTimeout(function () {
+											console.log("timeout set");
+											$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+										}, 200);
+										e.preventDefault();
+									});
+								});
+							})(jQuery);
+						</script>
 
-
-<!-- projects section-->
-<div class="jumbotron text-center"  style ="padding-top:400px;padding-bottom:400px;color:white;" >
-  <h3 style="color:black;display: inline; ">I</h3> 
-  <i class="fa fa-heart" style="color:black;display: inline;" ></i>
-  <h3 style="color:black; display: inline"> making cool shit. Here are some cool projects I've made!</h3>
-</div>
-
-<div class="container-fluid bg-1" style = "background-color:grey;">
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	  <!-- Indicators -->
-	  <ol class="carousel-indicators">
-	    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	    <li data-target="#myCarousel" data-slide-to="1"></li>
-	    <li data-target="#myCarousel" data-slide-to="2"></li>
-	  </ol>
-
-	  <!-- Wrapper for slides -->
-	  <div class="carousel-inner">
-	    <div class="item active">
-	      <img src="https://cdn1.vox-cdn.com/uploads/chorus_image/image/48898123/LA_sean_pavone_shutterstock.0.0.jpg" alt="Los Angeles">
-	    </div>
-
-	    <div class="item">
-	      <img src="https://cdn1.vox-cdn.com/uploads/chorus_image/image/48898123/LA_sean_pavone_shutterstock.0.0.jpg" alt="Los Angeles">
-	    </div>
-
-	    <div class="item">
-	     <img src="https://cdn1.vox-cdn.com/uploads/chorus_image/image/48898123/LA_sean_pavone_shutterstock.0.0.jpg" alt="Los Angeles">
-	    </div>
-	  </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- //header -->
+			<div class="banner-text">
+				<div class="container">
+					<h1><a href="index.html">Aditi Hebbar</a></h1>
+					<h2 class="w3ls-bnrtext">I am an<span> electrical </span>& <span>computer </span> engineer</h2>
+					<p class="w3ls-p">a student with the passion for creativity</p>
+					<a href="#about" class="buy btn-wayra scroll">Explore my work</a>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
+	<!-- //banner -->
+	<!-- about -->
+	<div class="agile-about w3ls-section text-center" id="about">
+		<div class="container">
+			<h3 class="agileits-title">about me</h3>
+			<div class="agileits-about-grid">
+				<p>Hi! Welcome to my website. I am currently a sophomore at Carnegie Mellon University studying electrical
+				and computer engineering. Over the course of my last three semeseters, I have picked up basic skills in builing hardware, circuits, programming and computer systems. While I am still exploring my passions, I do know that I 
+				<i class="fa fa-heart" style="color:black;display: inline;" ></i>
+				 building cool engineering shit. 
+				Feel free to hit me up!</p>
+			</div>
+			<a href="#contact" class="wthree- about-link scroll">hire me</a>
+		</div>
+	</div>
+	<!-- //about -->
+	<!-- about-bottom -->
+	<div class="agileits-about-btm">
+		<div class="container">
+			<div class="w3-flex">
+			<div class="col-md-4 col-sm-4 col-xs-12 ab1 agileits-about-grid1">
+				<span class="fa fa-trophy" aria-hidden="true"></span>
+				<h4 class="agileinfo-head">awards</h4>
+				<h5>Dean's list (Fall 2017)</h5>
+				<p>GPA 3.75 or above.</p>
+				<h5>112 Term Project Finalist (Dec 2016)</h5>
+				<p>One of 14 from 450 projects to be selected and 
+					presented live.</p>
+				<h5>Capital One Software Engineering Summit (January 2018)</h5>
+				<p>One of 40 students from 500+ applicants to be selected to attend a one week long Software Engineering Summit in Capital One’s corporate headquarters</p>
+			</div>
+			<div class="col-md-4 col-sm-4 ab1 agileits-about-grid2">
+				<span class="fa fa-graduation-cap  wthree-title-list" aria-hidden="true"></span>
+				<h4 class="agileinfo-head">education</h4>
+				<h5>Carnegie Mellon University</h5>
+				<p>BS in Electrical and Computer Engineering</p>
+				<p>Expected May 2020 (Pittsburgh, PA)</p>
+				<p>College of Engineering</p>
+				<p>Cumulative GPA: 3.57/4.0, Fall 2017 GPA: 3.83/4</p>
+				<h5>Indus International School</h5>
+				<p>High School, 2012- 2016 (Bangalore, India)</p>
+			</div>
+			<div class="col-md-4 col-sm-4 ab1 agileits-about-grid3">
+				<span class="fa fa-shield  wthree-title-list" aria-hidden="true"></span>
+				<h4 class="agileinfo-head">expertise</h4>
+				<h5>Software Engineering Intern at <a href = "http://www.systemantics.com/"> Systemantics</a></h5>
+				<p>June 2017 – July 2017 | Bangalore, India</p>
+				<h5>Undergraduate researcher at <a href = "http://www.psy.cmu.edu/~rakison/Infant_Cognition_Lab/index.html" a>
+				Infant Cognition Lab </a></h5>
+				<p>Winter break 2017 | Pittsburgh, PA</p>
+				<h5>Undergraduate researcher at <a href = "http://biorobotics.ri.cmu.edu/index.php" a>
+				Biorobotics lab </a></h5>
+				<p>Fall 2016 | Pittsburgh, PA</p>
+				<h5>Software co-lead for undergraduate research project Blindbot</h5>
+				<p>Mar 2016 – present | Pittsburgh, PA</p>
+				<p>(Received <a href = "https://www.cmu.edu/uro/research%20grants/SURG/index.html"> SURG </a> research grant to make autonomous quadrupedal walker.) </p>
+			</div>
+			<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //about-bottom -->
+	<!-- skills -->
+	<div class="agile-service w3ls-section" id="skills">
+		<div class="container">
+			<div class="col-md-5 w3_agileits-service-left">
+				<h3 class="agileits-title">skills</h3>
+				<h4 style ="color:white;" >Classes I have taken in the past include: 				
+					<ul >
+						 <li>Introduction to Computer Systems</li>
+						 <li>Introduction to Physical computing</li>
+						 <li>Funamentals of programming and Computer Science</li>
+						 <li>Principles of Imperative Computation</li>
+						 <li>Solidworks and Laser Cutting</li>
+					</ul>
+				</h4>
+				<h4 style ="color:white;">This semester, I am excited to learn about: 				
+					<ul style ="color:white;">
+						 <li>Principles of Functional Programming</li>
+						 <li>Machine Learning</li>
+						 <li>Structure and Design of Digital Systems</li>
+					</ul>
+				</h4>
 
+			</div>
+			<div class="col-md-7 skills-right">
+				<div class="vertical-skills  pull-right xs-center">
+					<ul class="list-inline">
+						<li>
+							<div class="skill" style="height:100%; background:#ff9d0d;"><span class="value">100%</span></div><span class="title">
+							C</span></li>
+						<li>
+							<div class="skill" style="height:90%; background:#03a9f4;"><span class="value">90%</span></div><span class="title">
+							Python</span></li>
+						<li>
+							<div class="skill" style="height:70%; background:#b32eca;"><span class="value">70%</span></div><span class="title">
+							Matlab</span></li>
+						<li>
+							<div class="skill" style="height:70%; background:#009688;"><span class="value">70%</span></div><span class="title">
+							Latex</span></li>
+						<li>
+							<div class="skill" style="height:60%; background:#009688;"><span class="value">60%</span></div><span class="title">
+							Bash</span></li>
+						<li>
+							<div class="skill" style="height:55%; background:#009688;"><span class="value">40%</span></div><span class="title">
+							HTML, CSS, JS </span></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="w3ls-section agileits-gallery" id="gallery">
+		<div class="container">
+			<h3 class="agileits-title">my projects (coming soon, I have a lot!)</h3>
+			<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+				<ul id="myTab" class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home-main" aria-expanded="true">Show all</a></li>
+					<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">Hardware</a></li>
+					<li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">Software</a></li>
+				</ul>
+				<div id="myTabContent" class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
+						<div class="w3_tab_img">
+							<div class="col-sm-6 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="w3layouts-License.txt">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g1.jpg" alt=" " class="img-responsive" />
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Consectetur</p>
+								</div>
+							</div>
+							<div class="col-sm-6 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g2.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g2.jpg" alt=" " class="img-responsive" />
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Adipiscing </p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g3.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g3.jpg" alt=" " class="img-responsive" />
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Ullamcorper </p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g4.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g4.jpg" alt=" " class="img-responsive" />
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Tristique</p>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="learning" aria-labelledby="learning-tab">
+						<div class="w3_tab_img">
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g2.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g2.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Eleifend</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g3.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g3.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Pulvinar</p>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="playing" aria-labelledby="playing-tab">
+						<div class="w3_tab_img">
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g4.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g4.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>tristique</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g1.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g1.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Vivamus</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g2.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g3.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Eleifend</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g3.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g2.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>tristique</p>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.tools.min.js"></script>
+		<script src="js/jquery.mobile.custom.min.js"></script>
+		<script src="js/jquery.cm-overlay.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.cm-overlay').cmOverlay();
+			});
+		</script>
+	</div>
+	<!-- //menu -->
+	<!-- contact -->
+	<div class="contact-w3-agileits w3ls-section" id="contact">
+		<div class="container">
+			<h3 class="agileits-title cont-w3l">Feel free to contact me</h3>
+			<div class="contact-main-w3ls">
+				
+				<div class="contact-main">
+					<div class="col-md-12 agileits-main-right">
+						<form action="#" method="post" class="agile_form">
+							<label class="header">Name</label>
+							<div class="icon1 w3ls-name1">
+								<input placeholder=" " name="first name" type="text" required="">
+							</div>
+							<div class="icon2">
+								<label class="header">Email</label>
+								<input placeholder=" " name="Email" type="email" required="">
+							</div>
+							<label class="header">your message</label>
+							<textarea class="w3l_summary" required=""></textarea>
+							<input type="submit" value="SEND">
+						</form>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //contact -->
+	<div class="agileits_w3layouts-footer">
+		<p>© 2017 Designer. All rights reserved | Design by <a href="http://w3layouts.com"> W3layouts.</a></p>
+	</div>
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
 
-<!-- research and experience-->
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- //end-smooth-scrolling -->
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
 
-<div class="jumbotron text-center"  style ="padding-top:400px;padding-bottom:400px;" >
-  <i class="fa fa-file-code-o" style="color:black;display: inline; font-size:1.3em;"  ></i>
-  <h3 style="color:black; display: inline;">Here's some of my research and experience so far</h3>
-</div>
-<div class="row">
-  <div class="col-sm-4">
-    <p class="text-center"><strong>Name</strong></p><br>
-    <a href="#demo" data-toggle="collapse">
-      <img src="https://cdn.wallpaperjam.com/content/images/aa/fc/aafcf1fbaa0a3079af54729606d70dcd7c3b65fa.jpg" class="img-circle exp" alt="Random Name">
-    </a>
-    <div id="demo" class="collapse">
-      <p>Guitarist and Lead Vocalist</p>
-      <p>Loves long walks on the beach</p>
-      <p>Member since 1988</p>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <p class="text-center"><strong>Name</strong></p><br>
-    <a href="#demo2" data-toggle="collapse">
-      <img src="https://cdn.wallpaperjam.com/content/images/aa/fc/aafcf1fbaa0a3079af54729606d70dcd7c3b65fa.jpg" class="img-circle exp" alt="Random Name">
-    </a>
-    <div id="demo2" class="collapse">
-      <p>Drummer</p>
-      <p>Loves drummin'</p>
-      <p>Member since 1988</p>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <p class="text-center"><strong>Name</strong></p><br>
-    <a href="#demo3" data-toggle="collapse">
-      <img src="https://cdn.wallpaperjam.com/content/images/aa/fc/aafcf1fbaa0a3079af54729606d70dcd7c3b65fa.jpg" class="img-circle exp" alt="Random Name">
-    </a>
-    <div id="demo3" class="collapse">
-      <p>Bass player</p>
-      <p>Loves math</p>
-      <p>Member since 2005</p>
-    </div>
-  </div>
-</div>
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
 
-<!-- skills and classes-->
-<div class="jumbotron text-center">
-  <div class="row">
-    <div class="col-sm-6">
-      <h3 style="color:black; display: inline;">Coding</h3>
-      <i class="fa fa-code" style="color:black;display: inline; font-size:1.3em;"  ></i> 
-      <h3 style="color:black; display: inline;"> skills:</h3>
-      <h4 class = "text-left" style="color:black;">Python</h4> 
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="90"
-        aria-valuemin="0" aria-valuemax="100" style="width:90%; background-color:green;" >
-          90%
-        </div>
-      </div>
-      <h4 class = "text-left" style="color:black;">C</h4>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="90"
-        aria-valuemin="0" aria-valuemax="100" style="width:90%; background-color:green;" >
-          90%
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <h3 style="color:black;">This semester, I'm learning about:</h3> 
-      	<a href="http://www.cs.cmu.edu/~213/"> 
-      		<i class="fa fa-desktop " style="color:black;font-size:1.3em;display: inline; text-align:left"  ></i>
-      		<h4 class = "text-left" style="color:black;display: inline;text-align:left;">Computer Systems </h4> 
-      	</a>
-      	<a href="https://en.wikipedia.org/wiki/Probability_distribution"> 
-      		<h4 class = "text-center" style="color:black;">Probability Theory</h4> 
-      	</a> 
-      	<a href="https://courses.ideate.cmu.edu/60-223/f2015/"> 
-      		<h4 class = "text-center" style="color:black;">Physical Computing</h4> 
-      	</a>        	
-    </div>
-  </div>
-</div>
-<!-- CSS-->
-
-
-  <style>
-  .jumbotron{
-  padding: 80px 120px;
-    background-size: 100%;
-    background-attachment:fixed;
-    margin-bottom: 0;
-  }
-  #title {
-    background-image: url("https://cdn.wallpaperjam.com/content/images/aa/fc/aafcf1fbaa0a3079af54729606d70dcd7c3b65fa.jpg");
-   }
-
-  .exp {
-    display: block;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;  
-    border: 10px solid transparent;
-    margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
-    opacity: 0.7;
-}
-.exp:hover {
-    border-color: #f1f1f1;
-}
-
-    html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-  p {
-  	text-align: center;
-  }
-
-
-  </style>
-
-
-
-
+		});
+	</script>
+<script type="text/javascript" src="js/SmoothScroll.min.js"></script>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>
-
